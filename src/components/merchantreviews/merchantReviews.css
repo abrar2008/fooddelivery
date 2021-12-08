@@ -1,0 +1,150 @@
+:root {
+  --person-image-length: 50px;
+  --star-length: 15px;
+}
+
+.review1img {
+  background-image: url('../../assets/images/mmrt1/Avtar-1.png');
+}
+.review2img {
+  background-image: url('../../assets/images/mmrt1/Avtar-2.png');
+}
+.review3img {
+  background-image: url('../../assets/images/mmrt1/Avtar-3.png');
+}
+
+.merchant-reviews {
+  background-image: url('../../assets/images/mmrt1/3_Merchant_Reviews_bg.png');
+  z-index: 6;
+}
+.headingMr {
+  width: 100%;
+  position: relative;
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+/* .review-container {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media (max-width: 980px) and (min-width: 661px) {
+  .review-container {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 3rem;
+    column-gap: 1rem;
+  }
+}
+
+@media (max-width: 660px) {
+  .review-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+  }
+} */
+
+.BrainhubCarousel__container {
+  /* width: 860px !important; */
+}
+.BrainhubCarousel {
+  justify-content: space-between;
+  /* width: 860px !important; */
+}
+.BrainhubCarousel .BrainhubCarousel__trackContainer {
+  /* width: 792px !important; */
+}
+.BrainhubCarousel__dots {
+  position: relative;
+}
+.BrainhubCarousel__dots .BrainhubCarousel__thumbnail {
+  padding: 0 !important;
+}
+.BrainhubCarousel__dots .BrainhubCarousel__thumbnail > a {
+  width: fit-content;
+  height: max-content;
+  display: inline-block;
+  padding: 0.5rem 0;
+}
+.BrainhubCarousel__dots > li {
+  /* border: 1px solid red;
+  background-color: gray; */
+  margin-top: 1rem;
+}
+.line {
+  width: 50px;
+  height: 1px;
+  border-top: 1px solid black;
+  margin: 0;
+}
+.BrainhubCarousel__thumbnail--selected > a > .line {
+  border: 2px solid red;
+  position: relative;
+  top: -1px;
+}
+.BrainhubCarousel__arrows {
+  background-color: transparent !important;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 17px !important;
+}
+button.BrainhubCarousel__arrows:after {
+  content: '\A';
+  background-image: url('../../assets/images/mmrt1/CaretRectangle.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 75%;
+  height: 75%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.BrainhubCarousel__arrows > span {
+  display: none !important;
+}
+.BrainhubCarousel__arrows.BrainhubCarousel__arrowLeft {
+  /* margin: 0 1rem; */
+  background-image: url('../../assets/images/mmrt1/CaretLeft.svg');
+  background-position: 7px 3px;
+}
+.BrainhubCarousel__arrows.BrainhubCarousel__arrowRight {
+  background-image: url('../../assets/images/mmrt1/CaretRight.svg');
+  background-position: 18px 3px;
+}
+button.BrainhubCarousel__arrows.BrainhubCarousel__arrowRight:after {
+  left: auto;
+  right: 0;
+}
+
+
+@media (max-width: 980px) and (min-width: 661px) {
+  .BrainhubCarousel__container {
+    width: 578px !important;
+  }
+  .BrainhubCarousel {
+    justify-content: space-between;
+    width: 578px !important;
+  }
+  .BrainhubCarousel .BrainhubCarousel__trackContainer {
+    width: 510px !important;
+  }
+}
+
+
+@media (max-width: 660px) {
+  .BrainhubCarousel__container {
+    width: 378px !important;
+  }
+  .BrainhubCarousel {
+    justify-content: space-between;
+    width: 378px !important;
+  }
+  .BrainhubCarousel .BrainhubCarousel__trackContainer {
+    width: 310px !important;
+  }
+}

@@ -1,0 +1,89 @@
+.Carousel__arrows {
+	position: relative;
+	padding: 21px;
+	border: none;
+	overflow: hidden;
+	outline: 0;
+	font-size: 0;
+	line-height: 0;
+	background-color: #7b59ff;
+}
+
+.Carousel__arrows span {
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	border-style: solid;
+	border-color: #fff;
+	border-width: 3px 3px 0 0;
+	padding: 5px;
+	transition: 0.3s;
+	font-size: 0;
+}
+
+.Carousel__arrows:hover {
+	background-color: #8768ff;
+}
+
+.Carousel__arrows:hover span {
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	border-style: solid;
+	border-color: #fff;
+	border-width: 3px 3px 0 0;
+	padding: 5px;
+	transition: 0.3s;
+	font-size: 0;
+}
+
+.Carousel__arrows:hover:enabled {
+	background-color: #8768ff;
+}
+
+.Carousel__arrows:hover:enabled span {
+	border-color: #fff;
+	margin: 0;
+}
+
+.Carousel__arrows:disabled {
+	background-color: #cccccc;
+}
+
+.Carousel__arrowLeft span {
+	transform: translate(-50%, -50%) rotate(-135deg);
+	margin-left: 2.45px;
+}
+
+.Carousel__arrowRight span {
+	transform: translate(-50%, -50%) rotate(45deg);
+	margin-left: -2.45px;
+}
+
+.Carousel--isRTL .Carousel__arrowLeft span {
+	transform: translate(-50%, -50%) rotate(45deg);
+	margin-left: -2.45px;
+}
+
+.Carousel--isRTL .Carousel__custom-arrowLeft span {
+	transform: rotate(180deg);
+}
+
+.Carousel--isRTL .Carousel__arrowRight span {
+	transform: translate(-50%, -50%) rotate(-135deg);
+	margin-left: 2.45px;
+}
+
+.Carousel--isRTL .Carousel__custom-arrowRight span {
+	transform: rotate(-180deg);
+}
+
+.Carousel--isRTL .Carousel__arrows:hover span {
+	margin: 0;
+}
+
+.Carousel__arrow--disable {
+	pointer-events: none;
+}

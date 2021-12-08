@@ -1,0 +1,106 @@
+:root {
+  --border-radius-width: 0.25rem;
+  --border-width: 1px;
+}
+html {
+  font-size: 100%;
+}
+
+.clearfix:after{
+  content: ".";
+  display: block;
+  height: 0;
+  font-size:0;
+  clear: both;
+  visibility:hidden;
+}
+
+.clearfix{display: inline-block;}
+
+/* Hides from IE Mac */
+* html .clearfix {height: 1%;}
+.clearfix{display:block;}
+/* End Hack */
+
+.App {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1rem;
+  background-color: #dfc0c0;
+}
+
+.btn {
+  background: #EA0124;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  box-shadow: inset 0px 0px 4px rgba(181, 181, 181, 0.7);
+  backdrop-filter: blur(6px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: var(--border-radius-width);
+  color: white !important;
+  font-weight: normal !important;
+  text-decoration: none;
+
+  margin: auto;
+  padding: 0.5rem 0.85rem;
+}
+
+.area-section {
+  /* border: 1px solid red; */
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+
+  width: 100%;
+  margin: 0;
+  padding: 3rem 4.5rem;
+}
+
+.heading {
+  background-image: url('./assets/images/mmrt1/Vector.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 33%;
+
+  margin: 0 0 2rem 0;
+  padding: 0;
+}
+
+@media (max-width: 980px) and (min-width: 661px) {
+  .App {
+    width: 610px;
+  }
+  .area-section {
+    background-image: none !important;
+    margin: 0;
+    padding: 2rem 1rem;
+  }
+  .heading {
+    background-size: 47%;
+  }
+  /* body {
+    background-color: red;
+  } */
+}
+
+/* @media (max-width: 660px) and (min-width: 531px) {
+  .App {
+    width: 510px;
+  }
+} */
+
+@media (max-width: 660px) {
+  .App {
+    width: 410px;
+  }
+  .btn {
+    padding: 0.25rem 0.45rem;
+  }
+  .area-section {
+    background-image: none !important;
+    margin: 0;
+    padding: 2rem 1rem;
+  }
+  .heading {
+    background-size: 72%;
+  }
+}

@@ -1,0 +1,111 @@
+:root {
+  --horiz-gap-user-info: 1rem;
+}
+.ordering-info,
+.infoItems,
+.user-interaction-Info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.ordering-info {
+  /* width: 100%; */
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+.infoItems {
+  width: fit-content;
+  justify-content: space-between;
+  column-gap: var(--horiz-gap-user-info);
+  /* justify-self: flex-start; */
+}
+.infoItems>.btn.info {
+  padding: 0.25rem 0.95rem;
+  font-weight: bold !important;
+}
+.user-interaction-Info {
+  /* border: 1px solid red; */
+  width: fit-content;
+  justify-content: space-between;
+  column-gap: var(--horiz-gap-user-info);
+  /* justify-self: flex-end; */
+}
+/* .infoItems>div,
+.user-interaction-Info>div {
+  position: relative;
+  margin-right: 1rem;
+} */
+.infoItems>div>div,
+.user-interaction-Info>div>div {
+  display: inline-block;
+}
+.info-area {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.ico {
+  margin-right: 0.5rem;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 25px;
+}
+
+.ico.timeIco {
+  background-image: url('../../assets/images/mmrt1/ic_time.svg');
+}
+.ico.minOrdIco {
+  background-image: url('../../assets/images/mmrt1/ic_min_order.svg');
+}
+
+.ico.ratingIco {
+  background-image: url('../../assets/images/mmrt1/Star.svg');
+}
+.ico.reviewIco {
+  background-image: url('../../assets/images/mmrt1/ic_comment.svg');
+}
+
+@media (max-width: 980px) and (min-width: 661px) {
+  .ordering-info {
+    flex-direction: column;
+    row-gap: 0.35rem;
+    font-size: 0.8rem;
+  }
+
+  .ordering-info>.infoItems {
+    width: 100%;
+    column-gap: auto;
+  }
+
+  .ordering-info>.infoItems>.btn.info {
+    padding: 0.25rem 0.45rem;
+    margin: 0;
+  }
+
+  .ordering-info>.user-interaction-Info {
+    width: 100%;
+    column-gap: auto;
+  }
+}
+
+@media (max-width: 660px) {
+  .ordering-info {
+    flex-direction: column;
+    row-gap: 0.35rem;
+    font-size: 0.8rem;
+  }
+  .ordering-info>.infoItems {
+    width: 100%;
+    column-gap: auto;
+  }
+  .ordering-info>.infoItems>.btn.info {
+    padding: 0.25rem 0.45rem;
+    margin: 0;
+  }
+  .ordering-info>.user-interaction-Info {
+    width: 100%;
+    column-gap: auto;
+  }
+}

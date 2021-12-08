@@ -1,0 +1,92 @@
+.review-item-sec {
+  background: #FFFFFF;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.25);
+  border-radius: var(--border-radius-width);
+
+  /* width: 31%; */
+  width: 100%;
+  max-width: 244px;
+  padding: 3rem 0.65rem;
+  margin: 1.5rem 0 0.25rem;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.review-item-sec>.reviewer-image{
+  width: var(--person-image-length);
+  height: var(--person-image-length);
+  border: 1px solid red;
+
+  position: absolute;
+  top: calc(var(--person-image-length) * -1 / 2);
+
+  border-radius: 50%;
+  background-color: #C4C4C4;
+  background-size: 100%;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.26);
+}
+.review-item-sec>.title {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  column-gap: 0.5rem;
+
+  font-size: 0.85rem;
+  margin-bottom: 0.25rem;
+}
+.review-item-sec>.title>.name {
+  font-weight: bold;
+}
+.review-item-sec>.title>.date {
+  font-size: 0.55rem;
+  color: gray;
+}
+.review-item-sec>.stars {
+  /* background-color: yellow; */
+  width: fit-content;
+  height: fit-content;
+
+  display: flex;
+  flex-direction: row;
+  column-gap: 0.25rem;
+}
+.review-item-sec>.stars>.star {
+  width: var(--star-length);
+  height: var(--star-length);
+  /* border: 1px solid red; */
+
+  background-image: url('../../assets/images/mmrt1/rating_star.svg');
+  background-size: 100%;
+}
+.review-item-sec>.stars>.star.half {
+  background-image: url('../../assets/images/mmrt1/rating_Half_star.svg');
+}
+.review-item-sec>.stars>.star.no {
+  background-image: url('../../assets/images/mmrt1/rating_star_grey.svg');
+}
+.review-item-sec>.reviewText {
+  text-align: center;
+  -moz-text-align-last: center;
+  /* Code for Firefox */
+  text-align-last: center;
+  font-size: 0.85rem;
+}
+/* width: 100%; */
+
+/* @media (max-width: 980px) and (min-width: 661px) {
+  .review-item-sec {
+    width: 48%;
+  }
+}
+
+@media (max-width: 660px) {
+  .review-item-sec {
+    width: 100%;
+  }
+} */

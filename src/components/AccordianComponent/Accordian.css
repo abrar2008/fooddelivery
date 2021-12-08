@@ -1,0 +1,73 @@
+.accordion-item {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.accordion-item:last-child {
+  margin-bottom: 0;
+}
+.accordion-title-area {
+  background: #F8CFD7;
+  width: 100%;
+  padding: 0.5rem 0.85rem;
+  text-align: start;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.accordion-title-area>div.accordion-title-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.accordion-title-area>div>.accordion-ico {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  margin-right: 0.5rem;
+}
+
+.accordion-title-area>div>.accordion-title {
+  font-weight: bold;
+}
+
+.accordion-title-area>div>.accordion-ico.popular {
+  background-image: url('../../assets/images/mmrt1/ic_most_popular.svg');
+}
+
+.accordion-title-area>div>.accordion-ico.pizza {
+  background-image: url('../../assets/images/mmrt1/ic_pizza.svg');
+}
+
+.accordion-title-area>div>.accordion-ico.salad {
+  background-image: url('../../assets/images/mmrt1/ic_salad.svg');
+}
+
+@media (max-width: 660px) {
+  div.accordion-title-area {
+    position: relative;
+    z-index: 2;
+  }
+ .accordion-title-area>div>.accordion-title {
+    z-index: 3;
+  }
+  .accordion-title-area>.accordion-ocBtn {
+    background-image: url('../../assets/images/mmrt1/CaretDown.svg');
+    background-repeat: no-repeat;
+
+    width: 33px;
+    height: 33px;
+    z-index: 4;
+
+    content: '\A';
+    right: 0;
+    top: -0.2rem;
+    padding: 0;
+    position: absolute;
+  }
+  .accordion-title-area>.accordion-ocBtn.active {
+    background-image: url('../../assets/images/mmrt1/CaretUp.svg');
+  }
+}

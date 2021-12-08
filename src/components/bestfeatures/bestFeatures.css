@@ -1,0 +1,31 @@
+.best-features {
+  background-image: url('../../assets/images/mmrt1/1_Our_Best_Feature_bg.png');
+  z-index: 6;
+}
+.headingBf {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.bfList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media (max-width: 980px) and (min-width: 661px) {
+  .bfList {
+    row-gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 660px) {
+  .best-features {
+     font-size: 0.75rem;
+  }
+  .bfList {
+    flex-direction: column;
+    row-gap: 0.5rem;
+  }
+}

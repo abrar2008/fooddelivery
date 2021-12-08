@@ -1,0 +1,333 @@
+:root {
+  --img-icon-length: 100px;
+  --img-icon-length-460: 75px;
+}
+
+.redText {
+  color: #ea0124;
+}
+
+.itemBoxContainer {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  background-color: rgba(0,0,0,0.2);
+  /* position: relative; */
+  text-align: center;
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+
+  position: fixed; /* Sit on top of the page content */
+  /* https://stackoverflow.com/a/18366583 */
+  overflow-y:scroll;
+  /* position: absolute; */
+  /* display: none; */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100vh; /* Full height (cover the whole page) */
+  top: 0;
+  /* top: 30%;
+  transform: translateY(-30%); */
+  left: 0;
+  /* right: 0; */
+  /* bottom: 0; */
+  /* background-color: rgba(0,0,0,0.5); */
+  z-index: 16; /* Specify a stack order in case you're using a different order for other elements */
+  /* cursor: pointer; */
+}
+
+.itemBoxContainer > .itemBox {
+  height: 71rem;
+  width: 40rem;
+  margin: auto;
+  background-color: whitesmoke;
+  /* border: 1px solid black; */
+  border-radius: 1rem;
+  z-index: 16;
+}
+
+.rowTitle, .item-interact-Info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.rowTitle {
+  padding: 2rem 2rem 0;
+  margin: 0 0 0.5rem 0;
+}
+
+.item-interact-Info {
+  padding: 0 2rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.item-interact-Info > div > div.last {
+  margin: 0 0 0 0.5rem;
+}
+
+.itemTitle {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.tIco, .rrIco {
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.tIco {
+  width: 2rem;
+  height: 2rem;
+}
+
+.rrIco {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.closeBgBlackIco {
+  background-image: url('../../assets/images/mmrt1/closeBgBlack.svg');
+}
+
+.section {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem 1rem;
+  text-align: center;
+  position: relative;
+}
+.section > .dashed {
+  position: absolute;
+  left: 2rem;
+  right: 2rem;
+  bottom: 0;
+  width: 36rem;
+  margin: auto;
+  /* border: 0.5px dashed black; */
+  /* border:dashed 1px hsla(0, 95%, 35%, 1); */
+  border-collapse: separate;
+  height: 1px;
+
+  /* https://stackoverflow.com/a/18064496 */
+  background-image: linear-gradient(to right, black 50%, rgba(255,255,255,0) 0%);
+  background-position: bottom;
+  background-size: 10px 1px;
+  background-repeat: repeat-x;
+}
+
+.section > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.section > .sub-title {
+  padding: 0.75rem 0;
+}
+.section > .sub-title > div {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.section > .sub-title > .indicator {
+  color: #10d223;
+}
+.section > .sizeChoices {
+  padding: 0.5rem 0;
+}
+.section > .sizeChoices > .sizePick,
+.section > .drinkChoices > .drinkPick,
+.section > .sideOptions > .optionPick,
+.section > .addOns > .addonPick {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+.section > div > div > input[type=radio] {
+  /* https://stackoverflow.com/a/56674979 */
+  /* https://stackoverflow.com/a/45328384 */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-clip: content-box;
+  padding: 0.125rem;
+  border: 2px solid #ea0124;
+  background-color: transparent;
+  border-radius: 50%;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+.section > div > div > input[type="radio"]:checked {
+  background-color: #e026e0;
+}
+.section > div > div > label {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0 0 0 1rem;
+}
+.section > .drinkChoices {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-auto-rows: auto;
+  grid-auto-flow: row;
+  grid-row: span 1 / span 1;
+  justify-items: stretch;
+  align-items: stretch;
+  grid-row-gap: 0.75rem;
+  /* justify-content: flex-start; */
+  /* align-content: flex-start; */
+  /* place-content: start; */
+}
+.section > .sideOptions, .section > .addOns {
+  padding: 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.section > div > div > input[type=checkbox] {
+  /* https://stackoverflow.com/a/56674979 */
+  /* https://stackoverflow.com/a/45328384 */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-clip: content-box;
+  padding: 0.125rem;
+  border: 2px solid #ea0124;
+  background-color: transparent;
+  border-radius: 30%;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+.section > div > div > input[type="checkbox"]:checked {
+  background-color: #e026e0;
+}
+
+.instructions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1.25rem 2rem 1rem;
+  text-align: center;
+  position: relative;
+  margin: 0 0 1rem 0;
+}
+.instructions .innerTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 0.75rem;
+}
+.instructions input {
+  width: 100%;
+  height: 2.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: gray;
+  margin: 0 0 0.75rem;
+  padding: 0 1rem;
+}
+
+
+.btnContainer {
+  padding: 1.25rem 2rem 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 2.25rem;
+}
+.btnContainer > .incrDecrBtns {
+  height: 2.25rem;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 0.25rem;
+}
+.btnContainer > .incrDecrBtns > div, .btnContainer > .incrDecrBtns > button {
+  border: 1px solid #EA0124;
+  width: 2.5rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 4px 0;
+
+  font-size: 1.75rem;
+  line-height: 0;
+  font-weight: 600;
+  background-color: gainsboro;
+}
+.btnContainer > .incrDecrBtns > button.decr {
+  border-top-left-radius: 30%;
+  border-bottom-left-radius: 30%;
+}
+.btnContainer > .incrDecrBtns > button.incr {
+  border-top-right-radius: 30%;
+  border-bottom-right-radius: 30%;
+  padding: 0;
+}
+.btnContainer > .incrDecrBtns > div.counter {
+  background-color: #e026e0;
+}
+.btnContainer > .addBtn {
+  width: 22rem;
+  height: 4.125rem;
+  background-color: #EA0124;
+  border-radius: 0.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.btnContainer > .addBtn > .btnLabel {
+  font-size: 1.5rem;
+}
+
+
+@media (max-width: 660px) {
+  .itemBox {
+    height: 71rem;
+    width: 25.5rem;
+    /* background-color: rgb(255,248,248); */
+  }
+  .itemTitle {
+    font-size: 1.75rem;
+  }
+  .section > .sub-title > div {
+    font-size: 1.25rem;
+  }
+  .section > div > div > label {
+    font-size: 1rem;
+    margin: 0 0 0 0.5rem;
+  }
+  .instructions .innerTitle {
+    font-size: 1.25rem;
+    margin: 0 0 0.5rem;
+  }
+  .instructions input {
+    font-size: 1rem;
+    margin: 0 0 0.5rem;
+    padding: 0 1rem;
+  }
+  .btnContainer > .incrDecrBtns > div, .btnContainer > .incrDecrBtns > button {
+    width: 2rem;
+    padding: 0 0 2px 0;
+    font-size: 1.5rem;
+  }
+  .btnContainer > .addBtn {
+    width: 12rem;
+    height: 4.125rem;
+    font-size: 1rem;
+  }
+  .btnContainer > .addBtn > .btnLabel {
+    font-size: 1.25rem;
+  }
+}
